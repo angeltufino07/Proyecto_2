@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+ 
+    --blue-Header: rgb(0, 63, 136);
+    --winter-sky: rgb(253, 197, 0);
+    --black: rgb(12, 12, 12);
+    --white-nav: rgb(232, 232, 232);
+    --gray_input_email: rgb(198, 195, 195);
+    
+
+    
+      --ff-spartan: 'League Spartan', sans-serif;
+      --fs-4: 1.3rem;
+      --fw-500: 500;
+     
+     
+      --section-padding: 60px;
+      --shadow-1: 0 6px 25px hsla(0, 0%, 0%, 0.1);
+      --radius-6: 6px;
+
+   .container { 
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-inline: 10px;
+
+    }
+
+    section{
+        width: 95%;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 2em;
+    }
+    
+    .gridSection{
+        background-color: var(--white-nav);
+        margin-top: 10px;
+        display: grid;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 5em;
+    }
+    
+    #sectionPic{
+        width: 100%;
+        max-width: 550px;
+        margin: auto;
+    }
+    
+    .sectionPic img{
+        width: 100%;
+    }
+    
+    p{
+        color: var(--lightgrey);
+    }
+    
+    .darkPara{
+        color: var(--darkText);
+        font-weight: 500;
+    }
+    
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: var(--white);
+}
+
+li { list-style: none; }
+
+p { color: var(--black);}
+
+h1 {
+
+    color: var(--black);
+}
+
+
+/*///////////////////////// HEADER/////////////////////////////// */
+
+
+    header{
+    background-color: var(--blue-Header);
+    position: fixed;
+    height: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-block: 20px;
+    z-index: 4;
+    }
+
+    .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    }
+  
+    .header > .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+      }
+      
+      .navbar-list{
+        display: flex;
+        gap: 10px;
+      }
+
+      .navbar-link {
+        color: var(--white-nav);
+        font-size: var(--fs-4);
+        font-weight: var(--fw-500);
+        padding: 16px;
+        
+       
+      }
+
+      .navbar-link:is(:hover, :focus) { color: var(--winter-sky); }
+
+      .header-logo{
+        width: 80px;
+    }
+    
+
+
+.sociallink{
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+
+
+
+
+//////   LOGO ABOUT US
+.logo-about-us{
+    display: flex;
+    justify-content:center;
+    max-width: 1100px;
+    margin: 0 auto;
+    
+
+}
+.logo-src{
+   
+    margin-top: 180px;
+    margin-bottom: 10px;
+    width: 450px;
+   
+}
+
+//////////////    The Company History    ////////////////////
+////////////////////////////////////////////////////////////
+
+
+
+.headline{
+    color: var(--black);
+    font-size: 3rem;
+    width: 100%;
+}
+
+.sub-headline{
+    color: var(--black);
+}
+
+
+.sectionPic{
+    order: 0;
+}
+
+.sectionDesc{
+    order: 1;
+    margin-top: 1em;
+}
+
+.bouncepic img{
+    animation: fade-out-right 10s ease infinite;
+    
+}
+
+
+.aboutusDesc{
+    order: 0;
+}
+
+.statusContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.status h1{
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.status h1 b{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.status p{
+    color: var(--black);
+    
+}
+
+
+
+
+
+@keyframes fade-out-right {
+    0% {
+    opacity: 1;
+    transform: translatex(0px);
+    
+    }
+    100%{
+    opacity: 0;
+    transform: translatex(40px);
+    
+    }}
+
+
+
+
+
+//////////////////// MISION VISION ///////////////////////
+/////////////////////////////////////////////////////////
+
+.services{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 4em;
+}
+
+.aboutusimgContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    box-shadow: var(--shadow-1);
+}
+
+.aboutusimgContainer img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.organizational{
+    margin-top: 1em;
+    display: grid;
+    gap: 50px; 
+}
+
+.organizational-mision{
+   display: flex;
+   align-items: flex-start;
+}
+
+.organizational-vision{
+    display: flex;
+    align-items: flex-start;
+ }
+
+
+
+.organizational-mision, .organizational-vision img{
+    margin-right: 1em;
+}
+
+.organizational-description h1{
+    margin-bottom: .5em;
+    font-size: 1.5rem;
+}
+
+.organizational-description p{
+   color: var(--black);
+}
+
+
+
+
+
+
+
+/////////////////////  MEET US  ////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+.video{
+    background-color: var(--white-nav);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: (.3fr, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+}
+
+.video-header{
+font-size: 2.5rem;
+text-align: center;
+margin-bottom: .5em;
+font-weight: bold;
+}
+
+
+.video-grid{
+
+margin: 0 auto;
+padding-bottom: 30px;
+border-radius: var(--radius-6);
+}
+
+
+
+
+////////////////////   CAROUSEL   //////////////////////
+/////////////////////////////////////////////////////////
+
+button{
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: none;
+    transition: all .3s ease-in-out;
+    }
+
+.container-ceo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .carousel-view {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 44px 0;
+    transition: all 0.25s ease-in;
+    background-color: var(--white-nav);
+    width: 100%;
+
+  }
+
+  .carousel-view .item-list {
+    max-width: 1000px;
+    
+    padding: 50px 10px;
+    display: flex;
+    gap: 48px;
+    scroll-behavior: smooth;
+    transition: all 0.25s ease-in;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+
+  .item-list img{
+        width: 350px;
+        height: 220px;
+        border-radius: var(--radius-6);
+
+  }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.item-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .item {
+    scroll-snap-align: center;
+    
+    background-color: var(--winter-sky);
+    border-radius:8px;
+  }
+
+
+  .item p{
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: lighter;
+   text-align: center;
+
+  }
+
+    .prev-btn {
+        margin-left: 10px;
+        cursor: pointer;
+        width: 50px;
+        opacity: .5;
+
+     
+      }
+      .prev-btn:hover {
+        opacity: 1;
+     }
+      .next-btn {
+        margin-right: 10px;
+        cursor: pointer;
+        width: 50px;
+        opacity: .5;
+
+
+      }
+      .next-btn:hover {
+        opacity: 1;
+     }
+
+     
+     //////////////////////////////////   FOOTER  ////////////////////
+     /////////////////////////////////////////////////////////////////
+
+     footer{
+        background-color: var(--gray_input_email);
+        margin-top: 5em;
+    }
+    
+    .footerlinksContainer{
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+        padding: 1em;
+    }
+    
+    
+    .joinSection{
+        display: flex;
+        align-items: center;
+        padding: 3em 0em;
+    }
+    
+    
+    .joinSection button{
+        height: auto;
+    }
+    
+    
+    .footerlinksContainer{
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+        padding: 1em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        justify-content: space-between;
+        padding-top: 5em;
+        border-top: 1px solid var(--lightgrey);
+    }
+    
+    .footersociallinkContainer{
+        margin-top: 1em;
+        align-items: center;
+    }
+    
+    .footerAboutus .sociallinkContainer{
+        justify-content: flex-start;
+    }
+    
+    .logo_footer{
+    
+        width: 90px;
+        cursor: pointer;
+    }
+    
+    
+    .footerlink{
+        display: flex;
+        flex-direction: column;
+        color: var(--white);
+    }
+    
+    
+    .sociallink{
+        width: 30px;
+        align-items: center;
+    }
+    
+    
+    .linkTitle{
+        font-size: 1.5rem;
+        margin-bottom: .5em;
+    }
+    
+    .footerlink a{
+        color: var(--white);
+        margin-bottom: 1em;
+        transition: all .5s ease-in-out;
+    }
+    
+    .footerlink a:hover{
+        transform: translateX(10px);
+    }
+    
+
+  
+    
+   
+
+
+
+
+
+/////////////////////////  MEDIA QUERIES//////////////////
+//////////////////////////////////////////////////////////
+
+
+@media screen and (max-width:700px) {
+    video{
+        width: 80%;
+   
+    }
+
+    .video-grid{
+
+        margin-right: 0 auto;
+    }
+
+
+}
+
+
+@media screen and (min-width:700px) {
+    .footerlinksContainer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    video{
+        width: 80%;
+    }
+}
+
+
+@media screen and (min-width:800px) {
+    .aboutusDesc{
+        order: 1;
+    }   
+
+    .statusContainer{
+        gap: 50px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .organizational{
+        grid-template-columns: 1fr 1fr;
+       gap: 20px;
+    }
+
+    .videoSection{
+        grid-template-columns: 1fr 3fr;
+      }
+
+    .video-header{
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: .5em;
+        font-weight: bold;
+        color: var(--black);
+    }
+    section{
+        width: 85%;
+    }   
+   
+  
+
+    .gridSection{
+        grid-template-columns: 1fr 1fr;
+    }
+    .nav{
+        position: relative;
+        width: auto;
+        background-color: transparent;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5%;
+    }
+    .nav-link{
+          margin-right: 2em;
+    }
+    .sectionPic{
+        order: 1;
+    }
+    
+    .sectionDesc{
+        order: 0;
+    }  
+  
+    video{
+        width: 60%;
+    }
+      
+}
+
+@media screen and (min-width:1000px) {
+    .organizational{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .video-header{
+        font-size: 3.5rem;
+    }
+
+    .headline{
+        font-size: 4em;
+    }
+
+    video{
+        width: 700px;
+        height: 400px;
+    }
+
+}
+
