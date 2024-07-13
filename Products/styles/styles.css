@@ -142,7 +142,7 @@ button {
   margin-left: 35%;
 }
 
-.welcome-content h3 {
+.welcome-content h2 {
   color: #424141;
 }
 
@@ -179,7 +179,7 @@ p {
   h1 {
     font-size: 1.8em;
   }
-  h2, h3, h4, h5 {
+  h2, h2, h4, h5 {
     font-size: 1.1em;
   }
   p {
